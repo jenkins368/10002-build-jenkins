@@ -11,10 +11,16 @@ git clone --depth 1 https://github.com/jenkinsci/jenkins.git
 cd jenkins
 ls -al
 
+
 mvn -am -pl war,bom -Pquick-build clean install
 
 ls -al
- 
+cd ..
+tar cf jenkins.tar jenkins
+file jenkins.tar
+cp jenkins.tar ~/
+file ~/jenkins.tar
+
 
 # ./gradlew localDistro
 # ./gradlew :distribution:archives:linux-tar:assembl
