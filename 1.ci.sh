@@ -8,7 +8,7 @@ cd $CMD_PATH
 echo "hello world"
 cd ~
 git clone --depth 1 https://github.com/jenkinsci/jenkins.git
-cd jenkinsci
+cd jenkins
 ls -al
 
 mvn  install  -Dmaven.test.skip=true
