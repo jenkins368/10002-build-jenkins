@@ -15,25 +15,10 @@ ls -al
 mvn -am -pl war,bom -Pquick-build clean install
 
 ls -al
-cd ..
-tar cf jenkins.tar jenkins
-file jenkins.tar
-cp jenkins.tar ~/
-file ~/jenkins.tar
+cd war
+cd target
+cp jenkins.war ~/
+file ~/jenkins.war
 
 
-# ./gradlew localDistro
-# ./gradlew :distribution:archives:linux-tar:assembl
 
-# tree -L 3
-# ls -al build/distribution/local/
-
-# cd build/distribution/local/
-
-# tar cf elasticsearch-8.13.4-SNAPSHOT.tar elasticsearch-8.13.4-SNAPSHOT
-# ls -al  
-# file elasticsearch-8.13.4-SNAPSHOT.tar
-# cp elasticsearch-8.13.4-SNAPSHOT.tar ~/
-# cd ~/elasticsearch
-# file build/distribution/local/elasticsearch-8.13.4-SNAPSHOT.tar
-# file ~/elasticsearch-8.13.4-SNAPSHOT.tar
