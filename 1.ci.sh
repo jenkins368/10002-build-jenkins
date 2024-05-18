@@ -7,7 +7,7 @@ cd $CMD_PATH
 
 echo "hello world"
 cd ~
-git clone -b dev_240518_01 --depth 1 https://github.com/jenkinsci/jenkins.git
+git clone --depth 1 https://github.com/jenkinsci/jenkins.git
 cd jenkinsci
 ls -al
 
